@@ -1,4 +1,5 @@
 # test-test
 # TEST Test
 konflikt mamy 
-Deltik jest Żydem
+
+# Deltik jest Żydem
