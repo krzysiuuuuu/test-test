@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja Tablicy</title>
+    <script>
+        // Funkcja
+        (function Funkcja() {
+            let zmienna = [];
+            for (let i = 0; i < 5; i++) {
+                let element = prompt(`Podaj cyfrę ${i + 1} z 5:`);
+
+                // Czy liczba
+                if (element !== null && !isNaN(element) && element.trim() !== "" && Number.isInteger(parseFloat(element))) {
+                    zmienna.push(Number(element)); // Zmienna
+                } else {
+                    alert("Nieprawidłowa wartość. Podaj tylko cyfrę.");
+                    i--; // Powrót
+                }
+            }
+
+            // Wynik
+            document.write("<h1>Twoje cyfry w tablicy:</h1>");
+            document.write("<p>[" + zmienna.join(", ") + "]</p>");
+        })();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
